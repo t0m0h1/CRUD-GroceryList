@@ -60,6 +60,7 @@ function addItem(e) {
 function displayAlert(text, action) {
     alert.textContent = text;
     alert.classList.add(`alert-${action}`);
+    // remove alert
     setTimeout(() => {
         alert.textContent = '';
         alert.classList.remove(`alert-${action}`);
@@ -68,13 +69,3 @@ function displayAlert(text, action) {
 
 // ***** local storage *****
 // add to local storage
-function addToLocalStorage(id, value) {
-    const grocery = {id, value};
-    let items = getLocalStorage();
-    items.push(grocery);
-    localStorage.setItem('list', JSON.stringify(items));
-}
-
-function getLocalStorage() {
-    return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
-}
