@@ -29,6 +29,3 @@ To set up the project on your local machine:
 2. Navigate into the project directory: `cd CRUD-GroceryList`
 3. Open `index.html` in your browser to view the application.
 
-## License
-
-This project is licensed under the MIT License.# CRUD-GroceryList
